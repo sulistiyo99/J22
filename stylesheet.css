@@ -1,0 +1,266 @@
+
+/*HEADER*/
+
+.header {
+  background-color: #27ae60;
+  color: #fff;
+  height: 100px;
+}
+.header-symbol {
+  float: left;
+}
+
+.header-logo {
+  float: left;
+  font-size: 40px;
+  padding: 20px 40px;
+}
+
+.header-list li {
+  float: left;
+  padding: 40px 25px;
+  list-style: none;
+}
+
+/*MAIN */
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: "Roboto";
+}
+.header-main {
+background-color: rgb(14, 73, 3);
+height: 90px;
+color: rgb(255, 255, 255);
+}
+
+.header-logo {
+    font-size: 36px;
+    font-weight: 200;
+    display: block;
+    float: left;
+    padding: 20px 40px;
+}
+
+.main-main {
+  padding: 100px 80px;
+}
+
+
+.contents1-title{
+  font-size: 20px;
+  border-bottom: 3px solid white;
+  padding-bottom: 5px;
+  margin-bottom: 25px;
+  margin-top: 50px;
+  opacity: 0.7;
+  color: #FFFFFF;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.column h3 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.image-card {
+  float: left;
+  width: 100%;
+  padding: 10px 10px;
+}
+.img-hover-zoom--colorize img {
+  transition: transform .5s, filter 1.5s ease-in-out;
+  filter: grayscale(100%);
+}
+
+/* The Transformation */
+.img-hover-zoom--colorize:hover img {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+.button-main {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button-main span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-main span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-main:hover span {
+  padding-right: 25px;
+}
+
+.button-main:hover span:after {
+  opacity: 0.7;
+  right: 0;
+}
+
+body {
+  background-image: url("https://i.ibb.co/VJ3fqpR/wassim-chouak-N2mk-5dqhw-M-unsplash.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+
+
+/*COMENT */
+.container-coment {
+  font-family: "Roboto",Roboto,Arial,sans-serif;
+  color: white;
+}
+
+.container-coment .heading h3, h2 {
+  font-weight: normal;
+  text-align: center;
+}
+.container-coment {
+  width: 1170px;
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+
+.container-coment input {
+  width : 70%;
+  margin-top : 10px;
+  margin-bottom : 30px;
+  padding : 10px;
+  font-size : 18px;
+  border : 1px solid #dee7ec;
+}
+
+.container-coment .btn {
+  padding : 12px 24px;
+  color : white;
+  display : inline-block;
+  opacity : 0.8;
+  border-radius : 4px;
+}
+
+.container-coment .form {
+  padding : 15px 40px;
+  background-color : #5dca88;
+  cursor : pointer;
+  box-shadow : 0 7px #1a7940;
+}
+
+.container-coment .form:active {
+  position : relative;
+  top : 7px;
+  box-shadow : none;
+}
+
+.container-coment .form-list {
+  border-top: 2px solid #dee7ec;;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-coment .list {
+  flex: auto;
+  width: 50%;
+}
+/*
+@media (max-width : 670px) {
+  .container-coment .form-list {
+    flex-direction: column;
+  }
+  .container-coment .list {
+    margin: 0 auto;
+  }
+}
+*/
+@media screen and (max-width: 800px) {
+  .container-coment {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  .container-coment .form-list {
+    flex-direction: column;
+  }
+  .container-coment .list {
+    margin: 0 auto;
+  }
+}
+
+/*FOOTER*/
+
+footer {
+  padding-top: 30px;
+}
+
+footer .container {
+  width: 1170px;
+  margin: 0 auto;
+}
+footer img {
+  width: 124px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
